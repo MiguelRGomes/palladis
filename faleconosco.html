@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> Palladis Projetos Integrados </title>
+        <meta charset="utf-8"/> 
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        #formulario{
+            outline: rgb(105, 105, 247) 2px solid;
+            padding: 10px;
+            width: 550px;
+            margin: 40px auto;
+        }
+        #nome, #email, #assunto, #botao {
+            margin: 10px;
+        }
+        .h2cor-a{
+            color:rgb(105, 105, 247);
+            margin: 20px;
+            text-align: center;
+        }
+        
+        #menu ul {
+            outline: rgb(105, 105, 247) 2px solid;
+            padding: 10px;
+            margin: 10px;
+            background-color: white;
+            list-style: none;
+        }
+
+        #menu ul li{
+            display: inline;
+            padding: 130px;
+        }
+        
+        #menu ul li a {
+            background-color: white;
+            color: rgb(105, 105, 247);
+            text-decoration: none;
+            border-bottom: 2px solid rgb(105, 105, 247);
+        }
+    </style>
+    <body>
+        <div>
+            <nav id="menu"> 
+                <ul> 
+                    <li> <a href="homepalladis.html"> Home </a> </li> 
+                    <li> <a href="palladis.html"> Palladis </a> </li>
+                    <li> <a href="projetos.html"> Projetos </a> </li>
+                    <li> <a href="faleconosco.html"> Fale Conosco </a> </li>
+                    <li> <a href="#"> </a></li>
+                </ul>            
+            </nav>
+        </div>
+        <h2 class=h2cor-a> Fale Conosco</h2>
+        <div id="formulario">
+            <form action="/pagina-processa-dados-do-form" method="post">
+                <div>
+                <div id="nome">
+                    <label> Nome Completo </label>
+                    <input type="text" id="nome" />
+                </div>
+                <div id="email">
+                    <label> Email </label>
+                    <input type="email" id="email" />
+                </div>
+                <div id="assunto">
+                    <label> Assunto </label>
+                    <input type="text" id="assunto" />
+                </div>
+                <div id="mensagem">
+                    <textarea id="mensagem" placeholder="Escreva sua mensagem" required></textarea>
+                </div>
+                <div id=botao>
+                    <button type="submit"> Enviar </button>
+                </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

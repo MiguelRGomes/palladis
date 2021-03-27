@@ -6,20 +6,43 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <style>
+        .container1 {
+        }
+        #sobreaempresa{
+            width: 300px; /*largura da caixa*/
+            border: 3px solid rgb(105, 105, 247); /* borda da cixa com espessura de 15px */
+            padding: 180px; /* espaçamento interno da caixa de 50px  na esquerda, direito, abaixo e acima*/
+            margin: 50px auto; /* espaçamento externo da caixa*/
+            position: absolute;
+            right: 45px;
+            float:right;
+        }
+        #metodologia {
+            width: 900px; /*largura da caixa*/
+            border: 3px solid rgb(105, 105, 247); /* borda da cixa com espessura de 15px */
+            padding: 180px; /* espaçamento interno da caixa de 50px  na esquerda, direito, abaixo e acima*/
+            margin: 555px auto; /* espaçamento externo da caixa*/            
+        }
+        h2 {
+            color: rgb(105, 105, 247);
+            text-align: center 
+        }
         #menu ul {
-            outline: blue 2px solid;
+            outline: rgb(105, 105, 247) 2px solid;
             padding: 10px;
             margin: 10px;
-            background-color: blue;
+            background-color: white;
             list-style: none;
         }
+
         #menu ul li{
             display: inline;
             padding: 130px;
         }
+        
         #menu ul li a {
-            background-color: blue;
-            color: white;
+            background-color: white;
+            color:rgb(105, 105, 247);
             text-decoration: none;
             border-bottom: 2px solid white;
         }
@@ -36,6 +59,17 @@
                     <li> <a href="#"> </a></li>
                 </ul>            
             </nav>
+        </div>
+        <div class="container1">
+                <div class="col-sm-6" id="sobreaempresa">
+                    <h2>Sobre a empresa</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container2">      
+                <div class="col-sm-6" id="metodologia">
+                    <h2>Metodologia</h2>
+                </div> 
         </div>
     </body>
 </html>
